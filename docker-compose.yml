@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: superx
       POSTGRES_PASSWORD: superxpassword
-      POSTGRES_DB: superxstock
+      POSTGRES_DB: superxtrader
     ports:
       - "5432:5432"
     volumes:
@@ -39,7 +39,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg2://superx:superxpassword@timescaledb:5432/superxstock}
+      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg2://superx:superxpassword@timescaledb:5432/superxtrader}
       REDIS_URL: ${REDIS_URL:-redis://redis:6379}
       DATA_PROVIDER: ${DATA_PROVIDER:-YAHOO}
       SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY to a value with at least 32 characters}
@@ -61,7 +61,7 @@ services:
       dockerfile: backend/Dockerfile
     command: ["celery", "-A", "app.worker.celery_app", "worker", "--loglevel=info"]
     environment:
-      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg2://superx:superxpassword@timescaledb:5432/superxstock}
+      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg2://superx:superxpassword@timescaledb:5432/superxtrader}
       REDIS_URL: ${REDIS_URL:-redis://redis:6379}
       DATA_PROVIDER: ${DATA_PROVIDER:-YAHOO}
       SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY to a value with at least 32 characters}
@@ -83,7 +83,7 @@ services:
       dockerfile: backend/Dockerfile
     command: ["celery", "-A", "app.worker.celery_app", "beat", "--loglevel=info"]
     environment:
-      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg2://superx:superxpassword@timescaledb:5432/superxstock}
+      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg2://superx:superxpassword@timescaledb:5432/superxtrader}
       REDIS_URL: ${REDIS_URL:-redis://redis:6379}
       DATA_PROVIDER: ${DATA_PROVIDER:-YAHOO}
       SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY to a value with at least 32 characters}

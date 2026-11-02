@@ -9,6 +9,7 @@ from app.analytics import calculate_signal_performance
 from app.core.database import get_db
 from app.core.security import get_current_user
 from app.models.all_models import SignalHistory, User
+from app.modules.ledger import portfolio_ledger
 
 router = APIRouter(
     prefix="/api/analytics",
@@ -33,7 +34,8 @@ def get_signal_analytics(db: Session = Depends(get_db)):
             "price": signal.price,
             "signal_date": signal.signal_date.isoformat(),
         }
-        for signal in history
+        for signal
+        in history
     ]
 
     latest_prices = {}
@@ -55,3 +57,19 @@ def get_signal_analytics(db: Session = Depends(get_db)):
                 latest_prices = {}
 
     return calculate_signal_performance(signals, latest_prices)
+
+
+@router.get("/portfolio")
+def get_portfolio_performance(
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """
+    โมดูลที่ 5: การวัดผลประสิทธิภาพพอร์ต (Performance Analytics)
+    - % Win Rate
+    - Profit Factor
+    - Average Win / Average Loss
+    - Maximum Drawdown (MDD)
+    - Equity Curve
+    """
+    return portfolio_ledger.get_performance_analytics(db, current_user.id)

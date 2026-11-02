@@ -36,7 +36,7 @@ def seed_default_data():
 seed_default_data()
 
 app = FastAPI(
-    title="SuperX Stock Screener & Paper Trading API",
+    title="SuperX Trader Screener & Paper Trading API",
     description="MVP Backend for stock analysis and paper trading.",
     version="0.1.0"
 )

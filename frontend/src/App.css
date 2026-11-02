@@ -8,9 +8,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 24px 16px;
+  padding: 24px 14px;
   background: #182521;
   color: #f5f7f3;
+  overflow-y: auto;
 }
 
 .brand {
@@ -45,19 +46,46 @@
   font-size: 0.62rem;
 }
 
+.nav-section-title {
+  font-size: 0.64rem;
+  font-weight: 700;
+  color: #84948a;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin: 18px 0 6px 8px;
+}
+
 .nav-list {
   display: grid;
-  gap: 5px;
-  margin-top: 42px;
+  gap: 4px;
+  margin-top: 20px;
 }
 
 .nav-item {
-  padding: 10px 12px;
+  padding: 8px 10px;
   border-radius: 6px;
   color: #b7c3bc;
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.nav-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #253930;
+  color: #c2db67;
+}
+
+.nav-item.active .nav-badge {
+  background: #c2db67;
+  color: #182521;
+}
+
 
 .nav-action {
   width: 100%;
@@ -777,4 +805,76 @@ tbody tr.selected-row {
   .table-panel {
     padding: 14px;
   }
+}
+
+/* Architecture 5 Modules - Risk Sizing & Strategy Badges */
+.strategy-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: #eef2f6;
+  color: #3b5998;
+  border: 1px solid #d0dbe5;
+}
+
+.risk-sizing-card {
+  margin-top: 14px;
+  padding: 12px;
+  background: #f8faf9;
+  border: 1px solid #e2e8e5;
+  border-radius: 8px;
+}
+
+.risk-sizing-card h4 {
+  margin: 0 0 10px 0;
+  font-size: 0.85rem;
+  color: #24332c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.risk-sizing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.risk-stat-item {
+  background: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #e8edea;
+}
+
+.risk-stat-item span {
+  display: block;
+  font-size: 0.68rem;
+  color: #718079;
+}
+
+.risk-stat-item strong {
+  display: block;
+  font-size: 0.88rem;
+  color: #1a2721;
+}
+
+.button-outline {
+  background: #fff;
+  border: 1px solid #1a9871;
+  color: #1a9871;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button-outline:hover {
+  background: #1a9871;
+  color: #fff;
 }

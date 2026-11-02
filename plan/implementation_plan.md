@@ -1,6 +1,6 @@
-## Refactor SuperX Stock to Production-Ready Architecture
+## Refactor SuperX Trader to Production-Ready Architecture
 
-The goal of this plan is to transform the SuperX Stock MVP from a prototype (using in-memory state and mock data) into a robust, scalable system. We will implement database persistence, real market data ingestion, and asynchronous background processing.
+The goal of this plan is to transform the SuperX Trader MVP from a prototype (using in-memory state and mock data) into a robust, scalable system. We will implement database persistence, real market data ingestion, and asynchronous background processing.
 
 ## User Review Required
 

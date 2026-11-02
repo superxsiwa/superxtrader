@@ -77,7 +77,7 @@ class WatchlistNotificationTests(unittest.TestCase):
         send_message.assert_called_once_with(
             "private-test-token",
             line_user_id,
-            "SuperX Stock test notification.",
+            "SuperX Trader test notification.",
         )
 
     def test_worker_only_sends_matching_actionable_watchlist_alerts(self):
@@ -110,7 +110,7 @@ class WatchlistNotificationTests(unittest.TestCase):
             call(
                 "private-test-token",
                 line_user_id,
-                "SuperX Stock signal: BUY AOT.BK at 42.50 THB.",
+                "SuperX Trader signal: BUY AOT.BK at 42.50 THB.",
             ),
         ])
         self.assertEqual(send_message.call_count, 1)

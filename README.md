@@ -1,4 +1,4 @@
-# SuperX Stock
+# SuperX Trader
 
 A technical-analysis stock screening and paper trading MVP designed for daily stock opportunity discovery.
 

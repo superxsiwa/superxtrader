@@ -1,6 +1,6 @@
-# 🚀 Master Development Roadmap: SuperX Stock
+# 🚀 Master Development Roadmap: SuperX Trader
 
-เอกสารนี้รวบรวมแผนงานทั้งหมด (Master Plan) ในการยกระดับโปรเจกต์ SuperX Stock จากสถานะ **MVP (Minimum Viable Product)** ไปสู่ระบบที่พร้อมสำหรับ **Production** โดยแบ่งออกเป็นเฟสต่างๆ ดังนี้:
+เอกสารนี้รวบรวมแผนงานทั้งหมด (Master Plan) ในการยกระดับโปรเจกต์ SuperX Trader จากสถานะ **MVP (Minimum Viable Product)** ไปสู่ระบบที่พร้อมสำหรับ **Production** โดยแบ่งออกเป็นเฟสต่างๆ ดังนี้:
 
 ---
 

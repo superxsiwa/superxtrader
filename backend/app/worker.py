@@ -135,7 +135,7 @@ def _send_watchlist_alerts(scan_results):
     for user_id, symbol, line_user_id, encrypted_token in recipients:
         signal = actionable_signals[symbol]
         message = (
-            f"SuperX Stock signal: {signal['recommendation']} {symbol} "
+            f"SuperX Trader signal: {signal['recommendation']} {symbol} "
             f"at {signal['price']:.2f} THB."
         )
         try:

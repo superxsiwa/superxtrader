@@ -1,6 +1,6 @@
 {
   "document": {
-    "title": "SuperX Stock | Opportunity Desk"
+    "title": "SuperX Trader | Opportunity Desk"
   },
   "language": {
     "label": "Language",
@@ -12,10 +12,19 @@
   },
   "navigation": {
     "label": "Main navigation",
-    "dashboard": "Dashboard",
+    "section_modules": "Trading",
+    "module1_ingestion": "Market Data Ingestion",
+    "module2_signals": "Signal & Analysis Engine",
+    "module3_risk": "Risk & Position Sizing",
+    "module4_execution": "Notification & Execution",
+    "module5_ledger": "Portfolio & Ledger Manager",
+    "section_essential": "Essential Screens",
+    "dashboard": "System Overview",
+    "watchlist": "Watchlist Monitor",
     "portfolio": "Portfolio",
     "analytics": "Analytics",
-    "settings": "Settings"
+    "section_system": "Settings",
+    "settings": "System Settings"
   },
   "session": {
     "label": "Session",
@@ -143,6 +152,37 @@
     "period": "90 trading days",
     "latestClose": "Latest close {{price}}",
     "noData": "No price data"
+  },
+  "risk": {
+    "title": "Risk & Position Sizing",
+    "riskPct": "Risk per trade (% Risk)",
+    "stopLoss": "Stop Loss (THB)",
+    "takeProfit": "Take Profit (THB)",
+    "calculate": "Calculate Sizing",
+    "calculating": "Calculating...",
+    "recommendedQty": "Recommended Qty",
+    "boardLot": "(Board Lot rounded down to 100 shares)",
+    "maxRisk": "Max Risk Amount",
+    "estimatedCost": "Estimated Gross Cost",
+    "riskReward": "Risk / Reward Ratio",
+    "apply": "Apply Sizing"
+  },
+  "modules": {
+    "strategy": "Strategy",
+    "stopLoss": "Stop Loss",
+    "takeProfit": "Take Profit",
+    "atr": "ATR (14)",
+    "realizedPnl": "Accumulated Realized P/L",
+    "totalCost": "Total Cost",
+    "avgCostNet": "Net Avg Cost (incl. fees)",
+    "fees": "Commission + VAT",
+    "orderId": "Order ID",
+    "netAmount": "Net Settlement",
+    "profitFactor": "Profit Factor",
+    "avgWin": "Average Win",
+    "avgLoss": "Average Loss",
+    "portfolioPerformance": "Portfolio Performance",
+    "equityCurve": "Portfolio Equity Curve"
   },
   "trade": {
     "eyebrow": "Simulation",

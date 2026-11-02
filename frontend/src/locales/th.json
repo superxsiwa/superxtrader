@@ -1,6 +1,6 @@
 {
   "document": {
-    "title": "SuperX Stock | แดชบอร์ดโอกาสลงทุน"
+    "title": "SuperX Trader | แดชบอร์ดโอกาสลงทุน"
   },
   "language": {
     "label": "เลือกภาษา",
@@ -12,10 +12,19 @@
   },
   "navigation": {
     "label": "เมนูหลัก",
-    "dashboard": "แดชบอร์ด",
+    "section_modules": "การเทรด",
+    "module1_ingestion": "ดึงข้อมูลราคาตลาด",
+    "module2_signals": "สแกนสัญญาณเทคนิค",
+    "module3_risk": "คำนวณความเสี่ยงและขนาดไม้",
+    "module4_execution": "ส่งคำสั่งและแจ้งเตือน",
+    "module5_ledger": "พอร์ตและประวัติบัญชี",
+    "section_essential": "หน้าจอที่จำเป็น",
+    "dashboard": "ภาพรวมระบบ (Overview)",
+    "watchlist": "หุ้นเฝ้าระวัง (Watchlist)",
     "portfolio": "พอร์ตลงทุน",
     "analytics": "วิเคราะห์ผล",
-    "settings": "ตั้งค่า"
+    "section_system": "ตั้งค่า",
+    "settings": "ตั้งค่าระบบ"
   },
   "session": {
     "label": "สถานะบัญชี",
@@ -143,6 +152,37 @@
     "period": "90 วันทำการ",
     "latestClose": "ราคาปิดล่าสุด {{price}}",
     "noData": "ไม่มีข้อมูลราคา"
+  },
+  "risk": {
+    "title": "คำนวณความเสี่ยงและขนาดไม้ (Position Sizing)",
+    "riskPct": "ความเสี่ยงต่อไม้ (% Risk)",
+    "stopLoss": "Stop Loss (บาท)",
+    "takeProfit": "Take Profit (บาท)",
+    "calculate": "คำนวณขนาดไม้",
+    "calculating": "กำลังคำนวณ...",
+    "recommendedQty": "จำนวนหุ้นแนะนำ",
+    "boardLot": "(Board Lot ทวีคูณ 100 หุ้น)",
+    "maxRisk": "เงินที่ยอมเสียได้สูงสุด",
+    "estimatedCost": "มูลค่าเงินที่ใช้",
+    "riskReward": "Risk / Reward Ratio",
+    "apply": "ใช้ขนาดไม้นี้"
+  },
+  "modules": {
+    "strategy": "กลยุทธ์",
+    "stopLoss": "Stop Loss",
+    "takeProfit": "Take Profit",
+    "atr": "ATR (14)",
+    "realizedPnl": "กำไรรับรู้แล้วสะสม",
+    "totalCost": "ต้นทุนรวม",
+    "avgCostNet": "ต้นทุนเฉลี่ยสุทธิ (รวมคอมฯ+VAT)",
+    "fees": "ค่าคอมฯ + VAT",
+    "orderId": "Order ID",
+    "netAmount": "ยอดสุทธิ (Net)",
+    "profitFactor": "Profit Factor",
+    "avgWin": "เฉลี่ยกำไรต่อไม้ชนะ",
+    "avgLoss": "เฉลี่ยขาดทุนต่อไม้แพ้",
+    "portfolioPerformance": "ประสิทธิภาพการเทรดพอร์ตโฟลิโอ",
+    "equityCurve": "กราฟการเติบโตของพอร์ต (Equity Curve)"
   },
   "trade": {
     "eyebrow": "จำลองการลงทุน",

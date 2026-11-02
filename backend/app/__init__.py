@@ -1,1 +1,1 @@
-"""SuperX Stock backend package."""
+"""SuperX Trader backend package."""

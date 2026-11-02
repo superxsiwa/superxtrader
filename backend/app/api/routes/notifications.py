@@ -76,7 +76,7 @@ def test_notification(
 
     try:
         token = decrypt_channel_access_token(settings.encrypted_channel_access_token)
-        send_line_message(token, settings.line_user_id, "SuperX Stock test notification.")
+        send_line_message(token, settings.line_user_id, "SuperX Trader test notification.")
     except LineMessagingError as error:
         raise HTTPException(status_code=502, detail=str(error)) from error
     return {"ok": True}
